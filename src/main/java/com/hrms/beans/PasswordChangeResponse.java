@@ -6,12 +6,10 @@ import lombok.Data;
 
 @Data
 @Component
-public class EntityBeanResponse {
+public class PasswordChangeResponse {
 	
-	private String msg;
+    private String msg;
 	
 	private boolean status;
-	
-	private EmployeeDto employeeDto;
 
 }
