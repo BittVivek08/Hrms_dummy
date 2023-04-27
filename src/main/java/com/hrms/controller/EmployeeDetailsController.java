@@ -22,8 +22,8 @@ public class EmployeeDetailsController {
 	@Autowired
 	private EmployeeDetailsService empService;
 	
-
-	@PostMapping("/saveEmployee")
+	
+    @PostMapping("/saveEmployee")
 	public EntityBeanResponse saveEmpDetails(@RequestBody EmployeeDetails empDetails){
 		
 		return empService.saveEmpDetails(empDetails);
