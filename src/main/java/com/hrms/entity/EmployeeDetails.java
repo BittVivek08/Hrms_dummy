@@ -7,9 +7,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name= "main_employees")
 public class EmployeeDetails {
@@ -18,7 +22,7 @@ public class EmployeeDetails {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	
-	private Integer empId;
+	private String empId;
 	
 	private String firstName;
 	
@@ -31,8 +35,13 @@ public class EmployeeDetails {
 	
 	private String qualification;
 	
+	private Long mobileNumber;
+	
 	private String email;
 	
+	private String password;
+	
 	private String gender;
-
+	
+	private String image;
 }

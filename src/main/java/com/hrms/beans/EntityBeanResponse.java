@@ -11,6 +11,8 @@ public class EntityBeanResponse {
 	private String msg;
 	
 	private boolean status;
+	
+	private EmployeeDto employeeDto;
 
 	public String getMsg() {
 		return msg;
