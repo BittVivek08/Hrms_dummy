@@ -1,27 +1,87 @@
 server:
-  port: 9090
+  port: 8080
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
+<<<<<<< HEAD
+    password: 1234
+    
+    url: jdbc:mysql://localhost:3306/hrms_dummy
+    username: root
+=======
     password: DbUser@123
+    
     url: jdbc:mysql://68.178.164.213:3306/hrms_dummy
     username: hrmsapp_user
+>>>>>>> 583b3706a9b47173e4d2ee1a313ad803c58da7a4
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     show-sql: true
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    open-in-view: false
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 2499e1509852c8e2f01662d057206e07b255f59e
 
 #server:
 #  port: 9090
 #spring:
 #  datasource:
 #    driver-class-name: com.mysql.cj.jdbc.Driver
+<<<<<<< HEAD
 #    password: root
 #    url: jdbc:mysql://localhost:3306/hrms_dummy
 #    username: root
+=======
+#    password: DbUser@123
+#    
+#    url: jdbc:mysql://68.178.164.213:3306/hrms_dummy
+#    username: hrmsapp_user
+=======
+<<<<<<< HEAD
+#server:
+#  port: 9999
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    password: root
+#    
+#    url: jdbc:mysql://localhost:3306/hrms_dummy
+#    username: root
+>>>>>>> 583b3706a9b47173e4d2ee1a313ad803c58da7a4
+>>>>>>> 2499e1509852c8e2f01662d057206e07b255f59e
 #  jpa:
 #    database-platform: org.hibernate.dialect.MySQL8Dialect
 #    hibernate:
 #      ddl-auto: update
 #    show-sql: true
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+
+      
+=======
+#    open-in-view: false
+=======
+
+ 
+        
+        
+        
+>>>>>>> 66af355697a837da3cc80d0ae79420235afc5300
+>>>>>>> 583b3706a9b47173e4d2ee1a313ad803c58da7a4
+>>>>>>> 2499e1509852c8e2f01662d057206e07b255f59e
