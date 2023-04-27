@@ -1,5 +1,7 @@
 package com.hrms.entity;
 
+import java.time.LocalDate;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -34,5 +36,10 @@ public class EmployeeDetails {
 	private String email;
 	
 	private String gender;
-
+	
+	
+	
+	
 }
+
+	

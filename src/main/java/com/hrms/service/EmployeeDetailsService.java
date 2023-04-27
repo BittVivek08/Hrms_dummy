@@ -2,7 +2,9 @@ package com.hrms.service;
 
 import java.util.List;
 
+import com.hrms.beans.EmpBirthResponse;
 import com.hrms.beans.EntityBeanResponse;
+
 import com.hrms.entity.EmployeeDetails;
 
 public interface EmployeeDetailsService {
@@ -14,5 +16,10 @@ public interface EmployeeDetailsService {
 	public EmployeeDetails getEmpById(Integer id);
 	
 	public EntityBeanResponse updateEmpDetails(EmployeeDetails employeeDetails);
+	
+	public List<EmpBirthResponse> findBirthdayDetails();
+
+
+	
 
 }

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.hrms.beans.EmpBirthResponse;
 import com.hrms.beans.EntityBeanResponse;
 import com.hrms.entity.EmployeeDetails;
 import com.hrms.service.EmployeeDetailsService;
@@ -45,4 +46,13 @@ public class EmployeeDetailsController {
 	public EntityBeanResponse updateEmplyee(@RequestBody EmployeeDetails empDetails){
 		return empService.updateEmpDetails(empDetails);
 	}
-}
+     
+     @GetMapping("/employeesbirthdays")
+     public List<EmpBirthResponse> getMatchingEmployeeBirthdays() {
+ 		List<EmpBirthResponse>  an= empService.findBirthdayDetails();
+ 		
+ 		return an;
+ 	}
+ }
+	
+
