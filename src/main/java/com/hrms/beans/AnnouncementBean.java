@@ -6,31 +6,28 @@ import lombok.Data;
 
 @Data
 @Component
-public class EntityBeanResponse {
+public class AnnouncementBean {
 	
-	private String msg;
+	private String message;
 	
 	private boolean status;
-
-	public String getMsg() {
-		return msg;
+	
+	public String getMessage() {
+		return message;
 	}
-
-	public void setMsg(String msg) {
-		this.msg = msg;
+	public void setMessage(String message) {
+		this.message = message;
 	}
-
 	public boolean isStatus() {
 		return status;
 	}
-
 	public void setStatus(boolean status) {
 		this.status = status;
 	}
-
 	@Override
 	public String toString() {
-		return "EntityBeanResponse [msg=" + msg + ", status=" + status + "]";
+		return "AnnouncementBean [message=" + message + ", status=" + status + "]";
 	}
+	
 
 }
